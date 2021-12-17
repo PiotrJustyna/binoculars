@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Program.fs"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\BinocularsLib\BinocularsLib.fsproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Watch Include="**/BinocularsLib.dll"/>
+        <Watch Remove="**/*.fs"/>
+        <Watch Remove="BinocularsHost/BinocularsHost.fsproj"/>
+    </ItemGroup>
+
+</Project>

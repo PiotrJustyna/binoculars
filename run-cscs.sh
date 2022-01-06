@@ -1,0 +1,1 @@
+dotnet watch run --project BinocularsHostCS2/BinocularsHostCS2.csproj

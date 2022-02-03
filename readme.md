@@ -56,3 +56,7 @@ watch : Hot reload of changes succeeded.
 7.      PID: 3503 - Hello, Piotr!
 8.      PID: 3503 - Hello, Piotr!
 ```
+
+## post mortem
+
+There is one idea I still want to try. What I've been trying so far was hot reloads triggered by changes to the source code of the dependencies. I want to explore running a published version of the host (C#) with a watch and dropping in a compiled F# dll. Let's see if that works and that is what I'm currently exploring.
